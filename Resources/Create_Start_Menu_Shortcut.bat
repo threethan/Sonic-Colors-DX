@@ -1,0 +1,1 @@
+powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Start Menu\Programs\Startup\Sonic Colors DX.lnk');$s.TargetPath='%~dp0/../Sonic Colors DX.exe';$s.Save()"

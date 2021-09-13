@@ -1,0 +1,19 @@
+Hi, I'm threethan and I put together this texture pack, I am NOT responsible for the majority of its content.
+Please direct credit to the individuals listed below.
+
+"Ghost1710079" aka "SHY GUY"
+- About 90% of the textures in the pack
+- Almost all object and level textures
+
+"Triforce141"
+- Fully redrawn UI
+- HD Fonts
+- Higher quality particle textures
+- Some additional stage textures
+
+"DatSquishyFello"
+- Cleaned-up sonic textures
+
+Myself, aka "threethan"
+- Font tweaks
+- Colors Ultimate-style button prompts

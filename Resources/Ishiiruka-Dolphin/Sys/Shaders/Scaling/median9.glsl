@@ -1,0 +1,48 @@
+#define s2(a, b)	temp = a; a = min(a, b); b = max(temp, b);
+void main()
+{
+	float2 size     = GetTargetResolution();
+	float2 inv_size = 1.0/size;
+	float2 coord = GetCoordinates();
+	float4 temp;
+	float4 sample0 = SampleLocation(coord);
+	float4 sample1 = SampleLocation(coord + inv_size);
+	float4 sample2 = SampleLocation(coord - inv_size);
+	float4 sample3 = SampleLocation(coord + float2(inv_size.x, -inv_size.y));
+	float4 sample4 = SampleLocation(coord + float2(-inv_size.x, inv_size.y));
+	float4 sample5 = SampleLocation(coord + float2(0, inv_size.y));
+	float4 sample6 = SampleLocation(coord + float2(0, -inv_size.y));
+	float4 sample7 = SampleLocation(coord + float2(inv_size.x, 0));
+	float4 sample8 = SampleLocation(coord + float2(-inv_size.x, 0));
+	s2(sample0, sample1);
+	s2(sample1, sample2);
+	s2(sample2, sample3);
+	s2(sample3, sample4);
+	s2(sample4, sample5);
+	s2(sample5, sample6);
+	s2(sample6, sample7);
+	s2(sample7, sample8);
+        s2(sample0, sample1);
+	s2(sample1, sample2);
+	s2(sample2, sample3);
+	s2(sample3, sample4);
+	s2(sample4, sample5);
+	s2(sample5, sample6);
+	s2(sample6, sample7);
+	s2(sample0, sample1);
+	s2(sample1, sample2);
+	s2(sample2, sample3);
+	s2(sample3, sample4);
+	s2(sample4, sample5);
+	s2(sample5, sample6);
+	s2(sample0, sample1);
+	s2(sample1, sample2);
+	s2(sample2, sample3);
+	s2(sample3, sample4);
+	s2(sample4, sample5);
+	s2(sample0, sample1);
+	s2(sample1, sample2);
+	s2(sample2, sample3);
+	s2(sample3, sample4);
+	SetOutput(sample4);
+}
