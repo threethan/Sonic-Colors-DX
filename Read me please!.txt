@@ -1,0 +1,212 @@
+
+
+          _____             _         ______      __                   ____ _  __
+         / ___/____  ____  (_)____   / ____/___  / /___  __________   / __ \ |/ /
+         \__ \/ __ \/ __ \/ / ___/  / /   / __ \/ / __ \/ ___/ ___/  / / / /   / 
+        ___/ / /_/ / / / / / /__   / /___/ /_/ / / /_/ / /  (__  )  / /_/ /   |  
+       /____/\____/_/ /_/_/\___/   \____/\____/_/\____/_/  /____/  /_____/_/| | v2.0
+                                                                          
+	         The Ultimate way to play, with up to 50% more colors!
+
+
+    _   _              _   
+   /_\ | |__  ___ _  _| |_ 
+  / _ \| '_ \/ _ \ || |  _|
+ /_/ \_\_.__/\___/\_,_|\__|
+                           
+ Hi, I'm threethan, and I'm responsible for this project.
+
+ Sonic Colors DX is intended to be the best way to play, in my opinion greatly surpassing SEGA's own botched rerelease
+ Various visual changes have been made, in order to replicate the shading of Sonic Unleashed, which Color's is largely based on
+ while also allowing for good performance at 60fps, uncapped resolution.
+ 
+ Playing this at default settings will require a decent (though not neccessarily high end) gaming PC.
+ If you cannot consistantly reach 60fps, check the "Performance" section
+
+ Keep in mind it would not be legal for me to distribute the original game files,
+ so you will need to obtain a rip of the game yourself. MAKE SURE IT IS AN ISO OR WBFS AND NOT AN NKIT!!!
+
+ If you are a content creator, please do share and link your content!
+ I would love to see comparisons with Ultimate made, people need to be more aware of emulation and have higher standards for remasters ;p
+
+  ___      _             
+ / __| ___| |_ _  _ _ __ 
+ \__ \/ -_)  _| || | '_ \
+ |___/\___|\__|\_,_| .__/
+                   |_|   
+Windows:
+ I've made things as simple as possible, but a little bit of manual setup is still required.
+ Simply run "StartSonicColorsDX.bat" and it will guide you through the <5 minute setup.
+
+If you are NOT on Windows, you can still play using the following manual setup process:
+ Prerequisites: Sonic Colors iso, A cpk unpacker for your platform that is functional with Color's older version of the format
+
+ - Download Ishiiruka-Dolphin for you platform here:
+	https://forums.dolphin-emu.org/Thread-unofficial-ishiiruka-dolphin-custom-version
+ - Make a file named 'portable.txt' in your Ishiiruka-Dolphin folder
+  then copy "User" from "Sonic Colors DX/Resources/Ishiiruka-Dolphin/" to YOUR "Ishiiruka-Dolphin" folder
+ - Launch YOUR "Ishiiruka-Dolphin," add the path to Sonic Colors so it will show up in the game list, and extract disc
+	(Right click 'Sonic Colors' > Properties > Filesystem > Right click 'Disc' > Extract disc)
+ - Go to the newly extracted game, and navigate to DATA>files>sonic_2010_0.cpk and extract it with a CPK unpacker
+ - Copy the contents of "Sonic Colors DX/Resources/modded files" into the extracted cpk, overwriting all
+ - Recompress the CPK and replace the old one within the extracted game files
+ - Run YOUR version of "Ishiiruka-Dolphin", remove the iso from paths to avoid confusion
+ - Open "DATA\sys\main.dol" from your extracted & modified copy of the game
+ - Enjoy!
+
+   ___         _           _    
+  / __|___ _ _| |_ _ _ ___| |___
+ | (__/ _ \ ' \  _| '_/ _ \ (_-<
+  \___\___/_||_\__|_| \___/_/__/
+
+ All in-game button prompts are for Xbox
+The default/recommended control scheme supports two controllers or one keyboard,
+and is designed to play similar to newer sonic games. If you do not like this, controls can be rebound as you wish.
+
+IF YOUR CONTROLLER DISCONNECTS DURING GAMEPLAY
+- Click "controllers" in the dolphin window
+- Click "configure" for gamecube port 1
+- Click "refresh" next to the device
+- If it still does not show up, click the dropdown from the list and select your controller
+
+Xbox Controls
+- L-Stick: Move
+- D-Pad: Move
+- A: Jump/Select
+- B: Stomp/Slide: B
+- X: Boost/Drift/Back
+- Y: Use wisp
+- LB: Left/Quick-step Left
+- RB: Right/Quick-step Right
+- LT: Switch character (sonic simulator)
+- RT: Use wisp
+- Menu: Start/Pause
+
+Playstation Controls
+- L-Stick: Move
+- D-Pad: Move
+- Cross: Jump/Select
+- Circle: Stomp/Slide
+- Squart: Boost/Drift/Back
+- Triangle: Use wisp
+- L1: Left/Quick-step Left
+- R1: Right/Quick-step Right
+- L2: Switch character (sonic simulator)
+- R2: Use wisp
+- Start: Start/Pause
+
+Switch Controls (note: Might be same as xbox, depending on how your device handles input)
+- L-Stick: Move
+- D-Pad: Move
+- B: Jump/Select
+- A: Stomp/Slide: B
+- Y: Boost/Drift/Back
+- X: Use wisp
+- L: Left/Quick-step Left
+- R: Right/Quick-step Right
+- ZL: Switch character (sonic simulator)
+- ZR: Use wisp
+- +: Start/Pause
+                                
+Keyboard Controls (Not recommended, game was made for analog)
+- WASD: Move
+- Space: Jump
+- LShift: Boost/Drift
+- Backspace: Back
+- Tab: Use wisp
+- LControl: Stomp/Slide
+- Enter: Start/Pause
+- Escape: Exit Game
+
+  ___          __                                
+ | _ \___ _ _ / _|___ _ _ _ __  __ _ _ _  __ ___ 
+ |  _/ -_) '_|  _/ _ \ '_| '  \/ _` | ' \/ _/ -_)
+ |_| \___|_| |_| \___/_| |_|_|_\__,_|_||_\__\___|
+                                                 
+ Having FPS under 60? Try the following:
+
+Use the built-in graphics presets
+- Run "Configure.bat"
+- Select one of the graphics options (normal is the default)
+
+Set a static resolution. By default the game's resolution is dependant on display resolution
+- Launch the game, tab out to the dolphin window
+- In the dolphin window, click "Graphics"
+- Select "Internal Resolution" in the general tab and change it to one of the lower options
+
+Remove Post Processing (this will make the game look considerably worse)
+- Launch the game, tab out to the dolphin window
+- In the dolphin window, click "Graphics"
+- Switch to the "Post-Processing" tab
+- Select "IsgurukaFX-Light" if it is not already, then press remove
+
+   _  __                       ___                   
+ | |/ /_ _  _____ __ ___ _   |_ _|_______  _ ___ ___
+ | ' <| ' \/ _ \ V  V / ' \   | |(_-<_-< || / -_|_-<
+ |_|\_\_||_\___/\_/\_/|_||_| |___/__/__/\_,_\___/__/
+
+ I've done my best to patch up bugs, but a few persist
+
+Spring Stuck
+- If you collide with two springs at the same time in a precise location in some levels, sonic will get stuck in place
+- If this happens, pause and restart from a checkpoint
+- To avoid this, move slightly to the side or homing attack problematic sprints
+
+Intermittent Stuttering
+- This is caused by lazy-loading HD textures
+- It will clear up after the game is left open for a few minutes
+
+Loading Screens Stutter
+- Loading screens might freeze or stutter momentarily
+- This is a side effect of faster loading
+                                                   
+   ___            _ _ _      
+  / __|_ _ ___ __| (_) |_ ___
+ | (__| '_/ -_) _` | |  _(_-<
+  \___|_| \___\__,_|_|\__/__/
+                             
+ The majority of content in this modpack was NOT created by myself. Proper credits are below:
+
+
+Original Game
+- SEGA Sonic Team
+
+Ishiiruka Dolphin (https://forums.dolphin-emu.org/Thread-unofficial-ishiiruka-dolphin-custom-version)
+- Ishiiruka aka tino aka rodolfo
+- The Dolphin Emulator team 
+
+Original HD Textures
+- Ghost1710079 aka SHY GUY (Stage and object textures)
+- Triforce141 (HD UI/HUD)
+
+Improved models, bloom removal, Aq.Park Act1 fix, Texture tweaks, Xbox button prompts, presets, install script, level order module
+- Ethan Medeiros aka Threethan (me)
+
+Also Uses:
+
+SkythTools CPK unpacker and repacker
+- skyth (github.com/blueskythlikesclouds)
+- Michael (https://github.com/ActualMandM)
+
+   ___ _                       _           
+  / __| |_  __ _ _ _  __ _ ___| |___  __ _ 
+ | (__| ' \/ _` | ' \/ _` / -_) / _ \/ _` |
+  \___|_||_\__,_|_||_\__, \___|_\___/\__, |
+                      |___/           |___/ 
+1.0:
+ Initial Release
+ Included HD models for some common objects and unleashed sonic model
+ Included HD textures (+custom edits)
+ Included installer exe
+ (Removed for using Dexterity's unleashed model port without permission)
+1.1:  
+ Replaced installer exe with a new & improved installer batch script
+ Removed unleashed sonic model
+2.0:
+ Added an original HD model for Sonic
+ Improved shading for Sonic
+ Added HD models for more stage objects
+ Fixed all animation issues with HD stage objects
+ Improved bloom preset
+ Fully removed original/broken bloom in all ages
+ Redid a few more HD textures & removed duplicates
